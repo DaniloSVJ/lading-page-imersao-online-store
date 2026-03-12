@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Essencial para layout 100% */
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* Garante que nada escape pela lateral */
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  text-align: center;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* HERO */
+
+.hero {
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background:
+    linear-gradient(rgba(37, 124, 51, 0.75), rgba(1, 92, 31, 0.85)),
+    url("../assets/computer.png");
+  background-repeat: no-repeat;
+
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1200px; /* Limita a largura do conteúdo para não ficar espalhado em telas UltraWide */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 3.98rem;
+  max-width: 90rem;
+}
+.hero p {
+  text-wrap: pretty;
+  max-width: 90rem;
+  font-size: 1.92rem;
+  line-height: 1.6;
+  max-width: 80rem;
+}
+
+.hero-text button {
+  width: 400px;
+}
+
+.cta {
+  margin-top: 20px;
+  background: #ffc107;
+  border: none;
+  padding: 14px 26px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 10px;
+}
+
+/* PASSOS##0f7b6c; */
+
+.steps {
+  padding: 20px;
+  background: #195e28;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.steps h2 {
+  color: white;
+}
+.steps-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.step {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  max-width: 100%;
+}
+
+/* APRENDER */
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.learn-grid {
+  display: grid;
+  /* 1fr garante que as 4 colunas dividam o espaço igualmente */
+  grid-template-columns: repeat(4, 12fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 30px aut o 0;
+}
+.learn-item {
+  background: #166534;
+  color: white;
+  border-radius: 12px;
+  padding: 18px 22px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+  /* Flexbox para alinhar ícone e texto verticalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* IMPORTANTE: Remova larguras fixas (width/min-width) aqui */
+  margin: 0;
+  margin-top: 45px;
+  min-height: 150px; /* Garante que todos tenham a mesma altura mínima */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra suave */
+}
+
+/* Ajuste do texto e ícone dentro do card */
+.learn-item p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column; /* Ícone em cima do texto */
+  align-items: center;
+  gap: 12px;
+}
+
+.learn-item svg {
+  font-size: 1.5rem; /* Ícone maior para destaque */
+  margin-bottom: 5px;
+}
+.learn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.learn li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+/* PROFESSOR */
+
+.teacher {
+  background: #f3f3f3;
+  padding: 60px 20px;
+}
+
+.teacher-content {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.teacher img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* DEPOIMENTOS */
+
+.testimonials {
+  padding: 70px 20px;
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.testimonial {
+  background: #f4f4f4;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 100%;
+}
+
+/* FORM */
+
+.form {
+  background: linear-gradient(135deg, #6b3df0, #8a4fff);
+  padding: 60px 20px;
+  color: white;
+}
+.form-container {
+  max-width: 500px;
+  margin: auto;
+}
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+form button {
+  padding: 14px;
+  background: #ffc107;
+  border: none;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  background: #111;
+  color: white;
+  padding: 30px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.76rem;
+  }
+  .hero-text p {
+    font-size: 1.6rem;
+  }
+  .hero-text button {
+    width: 60%;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .steps-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teacher-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .learn-item {
+    width: 270px;
+  }
+  .testimonials-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 66px) and (max-width: 710px) {
+  .learn-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .learn-item {
+    margin: 0;
+  }
+}
+@media (max-width: 711px) {
+  .learn-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  .hero-text {
+    align-items: center;
+  }
+}
