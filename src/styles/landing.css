@@ -72,11 +72,13 @@ body {
   max-width: 90rem;
 }
 .hero p {
+  color: #fff;
   text-wrap: pretty;
   max-width: 90rem;
   font-size: 1.92rem;
   line-height: 1.6;
   max-width: 80rem;
+  font-weight: 0;
 }
 
 .hero-text button {
@@ -114,8 +116,25 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.steps h2 {
-  color: white;
+.steps h1,
+h2,
+h3,
+p {
+  text-align: center;
+  color: #213547;
+}
+.steps h1,
+h2,
+h3,
+p {
+  text-align: center;
+  color: #213547;
+}
+.steps hr {
+  margin: 7px;
+}
+.steps p {
+  font-weight: bold;
 }
 .steps-grid {
   display: flex;
@@ -132,7 +151,10 @@ body {
   width: 250px;
   max-width: 100%;
 }
-
+.p2-step {
+  font-size: 17px;
+  color: #001b75;
+}
 /* APRENDER */
 
 .learn {
@@ -155,7 +177,7 @@ body {
 }
 .learn-item {
   background: #166534;
-  color: white;
+
   border-radius: 12px;
   padding: 18px 22px;
   text-align: center;
@@ -178,6 +200,7 @@ body {
 /* Ajuste do texto e ícone dentro do card */
 .learn-item p {
   margin: 0;
+  color: white;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.3;
@@ -209,6 +232,29 @@ body {
   padding: 60px 20px;
 }
 
+.teacher-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.teacher-text h1,
+img,
+h2 {
+  text-align: center;
+}
+.teacher-text h1 {
+  font-size: px;
+}
+.teacher-text h2 {
+  color: #556166;
+}
+.container-paragraphs {
+  padding: 10px;
+}
+.container-paragraphs p {
+  text-align: justify;
+}
 .teacher-content {
   max-width: 900px;
   margin: auto;
@@ -244,32 +290,35 @@ body {
   max-width: 100%;
 }
 
-/* FORM */
+/* footeer */
 
-.form {
-  background: linear-gradient(135deg, #6b3df0, #8a4fff);
-  padding: 60px 20px;
+.footeer {
+  background: linear-gradient(135deg, #195e28, #195e28);
+  padding: 20px 0;
   color: white;
 }
-.form-container {
-  max-width: 500px;
-  margin: auto;
-}
-form {
-  max-width: 400px;
-  margin: auto;
+.footeer-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+  width: 100%;
 }
-
-input {
-  padding: 12px;
-  margin-bottom: 12px;
-  border-radius: 6px;
-  border: none;
+.footeer-container h1 {
+  text-align: center;
+  font-size: 35px;
 }
-
-form button {
+.footeer-container h1,
+p {
+  margin-bottom: 10px;
+}
+#p-footeer {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footeer button {
   padding: 14px;
   background: #ffc107;
   border: none;
@@ -277,14 +326,14 @@ form button {
   border-radius: 6px;
   cursor: pointer;
 }
+input {
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: none;
+}
 
 /* FOOTER */
-
-footer {
-  background: #111;
-  color: white;
-  padding: 30px;
-}
 
 /* RESPONSIVO */
 
@@ -322,6 +371,12 @@ footer {
   .testimonials-grid {
     flex-direction: column;
     align-items: center;
+  }
+  .container-paragraphs {
+    padding: 35px;
+  }
+  .footeer-container {
+    padding: 35px;
   }
 }
 
