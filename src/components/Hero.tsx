@@ -16,8 +16,7 @@ const Hero = () => {
           {/* Transforme sua ideia em uma loja online que vende de verdade, em
             apenas 3 dias. */}
           <p id="hero-p-1" style={{ textAlign: "center" }}>
-            Aprenda em poucos passos criar uma loja virtual e coloca na bio do
-            seu instagram.
+            Aprenda em poucos passos criar uma loja virtual
           </p>
           <h1 id="hero-h1-1" style={{ fontSize: "39px" }}>
             <FaCalendar style={{ fontSize: "30px" }} /> 11 à 13 de Março
