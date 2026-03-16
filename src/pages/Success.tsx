@@ -1,7 +1,8 @@
 import "./../styles/success.css";
 
 const Success = () => {
-  const whatsappLink = "https://chat.whatsapp.com/SEU_LINK_DO_GRUPO";
+  const whatsappLink =
+    "https://chat.whatsapp.com/SEU_LINK_DO_GRUPhttps://chat.whatsapp.com/BAcZ98yEKBQ0Mh0jsVIwnZ?mode=gi_t";
 
   const handleRedirect = () => {
     window.location.href = whatsappLink;
