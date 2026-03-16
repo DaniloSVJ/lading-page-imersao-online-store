@@ -127,7 +127,7 @@ h2,
 h3,
 p {
   text-align: center;
-  color: #213547;
+  color: #131b17;
 }
 .steps h1,
 h2,
@@ -158,8 +158,8 @@ p {
   max-width: 100%;
 }
 .p2-step {
-  font-size: 17px;
-  color: #001b75;
+  font-size: 20px;
+  color: #1f3025;
 }
 /* APRENDER */
 
@@ -250,8 +250,9 @@ img,
 h2 {
   text-align: center;
 }
-.teacher-text h1 {
+.teacher-content h1 {
   font-size: px;
+  color: #1f3025;
 }
 .teacher-text h2 {
   color: #556166;
@@ -373,6 +374,9 @@ input {
   .teacher-content {
     flex-direction: column;
     text-align: center;
+  }
+  .teacher-content h1 {
+    color: #1f3025;
   }
   .learn-item {
     width: 270px;
