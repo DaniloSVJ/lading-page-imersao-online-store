@@ -44,11 +44,11 @@ const Registration = () => {
     };
     console.log(form);
     try {
-      await apiFetch("/leads", {
+      const teste = await apiFetch("leads", {
         method: "POST",
         body: JSON.stringify(data),
       });
-
+      console.log(teste);
       navigate("/success");
     } catch (error) {
       console.error("Erro ao enviar lead", error);

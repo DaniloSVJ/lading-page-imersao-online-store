@@ -1,3 +1,5 @@
+import tutor from "../assets/tutor.png";
+
 import "../styles/landing.css";
 
 const Teacher = () => {
@@ -8,10 +10,7 @@ const Teacher = () => {
 
         <div className="teacher-text">
           <div>
-            <img
-              src="https://randomuser.me/api/portraits/men/32.jpg"
-              alt="Professor"
-            />
+            <img id="photo-tutor" src={tutor} alt="Professor" />
           </div>
           <h2>DANILO SAMPAIO</h2>
           <div className="container-paragraphs">

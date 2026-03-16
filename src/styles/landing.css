@@ -82,6 +82,8 @@ body {
 }
 
 .hero-text button {
+  color: #000;
+
   width: 400px;
 }
 
@@ -106,7 +108,11 @@ body {
   max-width: 380px;
   border-radius: 10px;
 }
-
+#photo-tutor {
+  width: 200px;
+  height: 200px;
+  border-radius: 60%;
+}
 /* PASSOS##0f7b6c; */
 
 .steps {
@@ -159,6 +165,7 @@ p {
 
 .learn {
   display: flex;
+  background-color: #fff;
   flex-direction: column;
   align-items: center;
   padding: 20px;
@@ -290,14 +297,14 @@ h2 {
   max-width: 100%;
 }
 
-/* footeer */
+/* footer */
 
-.footeer {
+.footer {
   background: linear-gradient(135deg, #195e28, #195e28);
   padding: 20px 0;
   color: white;
 }
-.footeer-container {
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,22 +313,23 @@ h2 {
   margin: auto;
   width: 100%;
 }
-.footeer-container h1 {
+.footer-container h1 {
   text-align: center;
   font-size: 35px;
 }
-.footeer-container h1,
+.footer-container h1,
 p {
   margin-bottom: 10px;
 }
-#p-footeer {
+#p-footer {
   font-size: 20px;
   font-weight: bold;
 }
-.footeer button {
+.footer button {
   padding: 14px;
   background: #ffc107;
   border: none;
+  color: #000;
   font-size: 18px;
   border-radius: 6px;
   cursor: pointer;
@@ -349,6 +357,7 @@ input {
     font-size: 1.6rem;
   }
   .hero-text button {
+    color: #000;
     width: 60%;
   }
 
@@ -375,7 +384,7 @@ input {
   .container-paragraphs {
     padding: 35px;
   }
-  .footeer-container {
+  .footer-container {
     padding: 35px;
   }
 }

@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 import Steps from "../components/Steps";
 import Learn from "../components/Learn";
 import Teacher from "../components/Teacher";
-import Footeer from "../components/Footeer";
+import Footer from "../components/Footer";
 
 const LandingPage = () => {
   return (
@@ -11,7 +11,7 @@ const LandingPage = () => {
       <Learn />
       <Steps />
       <Teacher />
-      <Footeer />
+      <Footer />
     </main>
   );
 };

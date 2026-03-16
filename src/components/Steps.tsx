@@ -40,11 +40,13 @@ const Steps = () => {
           <p>
             <BsCreditCard2BackFill style={{ fontSize: "20px" }} />
           </p>
-          <p className="p2-step">Configuração de Forma de Pagamento</p>
+          <p className="p2-step">
+            Configuração de Forma de Pagamento e da loja no Instagram
+          </p>
         </div>
       </div>
       <button style={{ margin: "40px 0" }} className="cta">
-        Inscrever-me Agora e Aclopar loja no Instagram
+        Inscrever-me Agora
       </button>
     </section>
   );
