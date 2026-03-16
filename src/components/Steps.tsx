@@ -41,7 +41,7 @@ const Steps = () => {
             <BsCreditCard2BackFill style={{ fontSize: "20px" }} />
           </p>
           <p className="p2-step">
-            Configuração de Forma de Pagamento e da loja no Instagram
+            Configuração de Forma de Pagamento e do Instagram
           </p>
         </div>
       </div>
