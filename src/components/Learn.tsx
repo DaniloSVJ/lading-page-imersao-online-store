@@ -11,7 +11,7 @@ const Learn = () => {
         <div className="learn-item">
           <p>
             <FaCalendarCheck />
-            &nbsp;11 à 13 de Março
+            &nbsp;24 à 26 de Março
           </p>
         </div>
         <div className="learn-item">

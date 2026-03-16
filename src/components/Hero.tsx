@@ -19,7 +19,7 @@ const Hero = () => {
             Aprenda em poucos passos criar uma loja virtual
           </p>
           <h1 id="hero-h1-1" style={{ fontSize: "39px" }}>
-            <FaCalendar style={{ fontSize: "30px" }} /> 11 à 13 de Março
+            <FaCalendar style={{ fontSize: "30px" }} /> 24 à 26 de Março
           </h1>
 
           <button
